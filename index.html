@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/gif" sizes="16*16" href="1.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Tracking App</title>
+</head>
+<body>
+    <header>
+        <img src="bg.jpg" alt="background image">
+    </header>
+
+    <div class="boxes">
+        <h1 class="title">
+            Overall Statistics
+        </h1>
+        <div class="row">
+            <div class="box">
+                <img src="1.png" alt="">
+                <div class="content">
+                    <h3 class="heading">
+                        Total Cases
+                    </h3>
+                    <h1 class="total"></h1>
+                </div>
+            </div>
+            <div class="box">
+                <img src="2.png" alt="">
+                <div class="content">
+                    <h3 class="heading">
+                        Active Cases
+                    </h3>
+                    <h1 class="active"></h1>
+                </div>
+            </div>
+            <div class="box">
+                <img src="3.png" alt="">
+                <div class="content">
+                    <h3 class="heading">
+                        Total Deaths
+                    </h3>
+                    <h1 class="deaths"></h1>
+                </div>
+            </div>
+            <div class="box">
+                <img src="4.png" alt="">
+                <div class="content">
+                    <h3 class="heading">
+                        Recovered
+                    </h3>
+                    <h1 class="recovered"></h1>
+                </div>
+            </div>
+            <div class="box">
+                <img src="5.png" alt="">
+                <div class="content">
+                    <h3 class="heading">
+                        Critical
+                    </h3>
+                    <h1 class="critical"></h1>
+                </div>
+            </div>
+            <div class="box">
+                <img src="6.png" alt="">
+                <div class="content">
+                    <h3 class="heading">
+                        Affected Countries
+                    </h3>
+                    <h1 class="affected"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="table-section">
+        <h1 class="title">
+            All Countries Covid Info
+        </h1>
+        <div class="search">
+            <input type="search" class="search-text" placeholder="Search here">
+        </div>
+        <div class="table">
+            <table id="covid">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Continent</th>
+                        <th>Country</th>
+                        <th>Flag</th>
+                        <th>Total Cases</th>
+                        <th>Total Deaths</th>
+                        <th>Active Cases</th>
+                        <th>Critical</th>
+                        <th>Total Recovered</th>
+                        <th>Today's Cases</th>
+                        <th>Today's Deaths</th>
+                        <th>Today's Recovered</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
